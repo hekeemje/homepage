@@ -96,7 +96,6 @@ body {
       color: var(--primary-text-color);
       margin-bottom: 15px;
       text-decoration-color: var(--text-decoration-color);
-      text-decoration-line: underline;
   }
 
   .contact-info__sub-header {
@@ -215,7 +214,6 @@ body {
 .experiences__company-header-name {
     color: var(--primary-text-color);
     text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
     text-align: left;
     margin-bottom: 10px;
 }
