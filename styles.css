@@ -296,6 +296,11 @@ body {
     text-decoration: line-through;
 }
 
+.cat {
+    margin-right: 15px;
+    width: 48px;
+}
+
 .container:first-child .resume__block {
     border-bottom: unset;
 }
