@@ -261,3 +261,11 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+.flag {
+    margin-right: 5px;
+    width: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
