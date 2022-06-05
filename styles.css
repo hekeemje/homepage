@@ -42,8 +42,8 @@ body {
 .resume {
     background: linear-gradient(24deg, rgb(252, 253, 253), rgb(255 253 251 / 42%));
     margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    border: 1px solid #64e8f1;
+    box-shadow: 1px 1px 7px 7px #dbf4f5dc;
     padding: 30px 0;
     max-width: 900px;
 }
