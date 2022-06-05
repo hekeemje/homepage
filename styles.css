@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #efefef;
+    background-repeat: round;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -35,6 +40,7 @@ body {
 }
 
 .resume {
+    background: linear-gradient(24deg, rgb(252, 253, 253), rgb(255 253 251 / 42%));
     margin: 50px auto;
     border: 1px solid #f5f5f5;
     box-shadow: 1px 1px 7px 7px #f5f5f5;
@@ -49,7 +55,20 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+    .intro__icon-wrapper {
+        margin-right: 15px !important;
+    }
+    .resume {
+    margin: unset !important;
+    }
 
+    .container:first-child {
+        margin-bottom: 30px;
+    }
+
+    .resume__block {
+        padding: 15px;
+    }
     .main-info,
     .contact_info_container {
         flex-direction: column;
@@ -91,6 +110,11 @@ body {
       justify-content: space-between;
   }
 
+  .contact-info__block a {
+      display: flex;
+      align-items: center;
+  }
+
   .contact-info__block--center {
       justify-content: center;
   }
@@ -102,14 +126,21 @@ body {
       justify-content: start;
   }
 
+.contact-info__item i {
+    color: var(--icon-color);
+}
+
   .contact-info__item:not(:last-child) {
       margin-bottom: 20px;
   }
 
   .contact-info__item-icon-wrapper {
-      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
       width: 20px;
       display: flex;
+      font-size: 16px;
       justify-content: center;
   }
 
@@ -118,7 +149,7 @@ body {
   }
 
   .contact-info__item-icon {
-      height: 1.1428rem;
+      width: 16px;
       vertical-align: text-bottom;
   }
 
@@ -159,7 +190,7 @@ body {
 
 .skills__header {
     color: var(--secondary-text-color);
-    text-align: center;
+    /*text-align: center;*/
     margin-bottom: 15px;
 }
 
@@ -168,22 +199,17 @@ body {
     text-align: justify;
 }
 
-.experiences {
-    flex: 1 1 60%;
-    margin-right: 50px;
-}
-
 .experiences__header {
     color: var(--secondary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .experiences__company-header-durability {
     color: var(--durability-text-color);
     text-align: left;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .experiences__company-header-name {
@@ -191,7 +217,7 @@ body {
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .experiences__company-project {
@@ -203,7 +229,7 @@ body {
     color: var(--durability-text-color);
     text-align: left;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .experiences__company-project-name {
@@ -218,7 +244,7 @@ body {
 }
 
 .additional-info {
-    flex: 1 1 40%;
+    /*flex: 1 1 40%;*/
 }
 
 .additional-info__education {
@@ -228,14 +254,14 @@ body {
 .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .additional-info__education-university-durability {
     color: var(--durability-text-color);
     text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
 }
 
 .additional-info__education-university-speciality {
@@ -255,11 +281,13 @@ body {
 .additional-info__languages-header {
     color: var(--secondary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
 }
 
 .flag {
@@ -268,4 +296,21 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+}
+.lt {
+    text-decoration: line-through;
+}
+
+.container:first-child .resume__block {
+    border-bottom: unset;
+}
+.container:nth-of-type(2) .resume__block {
+    border-top: 3px solid var(--border-color);
+    padding-top:30px;
+}
+
+.contact-info__avatar:hover{
+    cursor: pointer;
+    transform: rotate(720deg);
+    transition: 1s;
 }
